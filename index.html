@@ -3,37 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="output.css">
+    <title>BMI Calculator</title>
+   
+      <script defer src="app.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-
-
 <body class="min-h-screen flex items-center justify-center bg-gray-100">
-    <div class="w-96 text-center bg-white p-4 rounded-xl shadow">
-        <h1 id="bmispe" class="text-4xl mb-4 font-bold">📏</h1>
-      <h1 id="heading" class="text-2xl font-bold">BMI Calculator</h1>
-      <p class="mb-3 text-neutral-600">BMI Calculator – Body Mass Index.</p>
-  
-      <div class="flex flex-col gap-4">
-        <input type="text" id="height" placeholder="Enter Height"
-          class="w-full py-3 border border-neutral-300 px-3 rounded-xl focus:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-200 transition">
-        <input type="text" id="weight" placeholder="Enter Weight"
-          class="w-full py-3 border border-neutral-300 px-3 rounded-xl focus:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-200 transition">
-        <input type="text" id="bmi" placeholder="BMI"
-          class="w-full py-3 border border-neutral-300 px-3 rounded-xl focus:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-200 transition">
-        <input type="text" id="bmiprime" placeholder="BMI-Prime"
-          class="w-full py-3 border border-neutral-300 px-3 rounded-xl focus:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-200 transition">
-            </div>
-  
-      <button id="btn" onclick="bmi()"
-        class="w-full text-white px-4 py-3 rounded-xl mt-4"
-        style="background-color: #1f2937;">Get BMI result</button>
-    </div> 
+  <div class="w-96 text-center bg-white p-4 rounded-xl shadow">
+    <h1 id="bmispe" class="text-4xl mb-4 font-bold">📏</h1>
+    <h1 id="heading" class="text-2xl font-bold">BMI Calculator</h1>
+    <p class="mb-3 text-neutral-600">BMI Calculator – Body Mass Index.</p>
 
+    <div class="flex flex-col gap-4">
+      <input type="text" id="height" placeholder="Enter Height in cm"
+        class="w-full py-3 border border-neutral-300 px-3 rounded-xl focus:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-200 transition">
+      <input type="text" id="weight" placeholder="Enter Weight in kg"
+        class="w-full py-3 border border-neutral-300 px-3 rounded-xl focus:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-200 transition">
+      <input type="text" id="bmi" placeholder="BMI"
+        class="w-full py-3 border border-neutral-300 px-3 rounded-xl focus:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-200 transition" readonly>
+      <input type="text" id="bmiprime" placeholder="BMI-Prime"
+        class="w-full py-3 border border-neutral-300 px-3 rounded-xl focus:border-violet-300 focus:outline-none focus:ring-4 focus:ring-violet-200 transition" readonly>
+    </div>
+
+    <button id="btn"
+      class="w-full text-white px-4 py-3 rounded-xl mt-4"
+      style="background-color: #1f2937;">Get BMI result</button>
+  </div>
+</body>
     
       
       
-    <script src="app.js"></script>
-
+  
   </body>
 </html>
